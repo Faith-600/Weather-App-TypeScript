@@ -1,0 +1,146 @@
+
+
+.maincontainer {
+  display: flex;
+  padding-top: 2rem;
+background-color:aliceblue;
+border-radius: 12px;
+box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+justify-content: center;
+flex-direction: column;
+width: 50%;
+margin: auto;
+}
+
+
+.searchArea {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+
+}
+
+
+.searchArea > input {
+outline: none;
+border: none;
+border: 1px solid grey;
+padding: 8px;
+  border-radius: 20px; 
+text-align: center;
+ width: 300px; 
+
+}
+.searchCircle {
+width: 30px;  
+height: 30px;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+margin-top: 5px;
+background-color: white;
+border-radius: 50%;
+
+}
+
+
+
+
+  .weatherArea {
+display: flex;
+align-items: center;
+flex-direction: column;
+
+  }
+
+
+ .icon {
+font-size: 3rem;
+ }
+
+ h1 {
+font-size: 2rem;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+/* .cloudItem {
+  font-size: 15px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+} */
+ 
+
+
+ span {
+margin-bottom: 5px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+.bottomArea {
+display: flex;
+align-items: center;
+justify-content: space-around;
+font-family: "Josefin Sans", sans-serif;
+margin: 10px;
+background: linear-gradient(
+90deg,
+rgba(243, 255, 253, 1) 0%,
+rgba(253, 255, 232, 1) 100%
+);
+border-radius: 12px;
+padding: 10px;
+}
+
+.humidityLevel{
+display: flex;
+align-items: center;
+margin: 0 20px; 
+}
+
+.wind{
+  display: flex;
+margin: 0 20px;
+align-items: center;
+justify-content: center;
+font-family: "Josefin Sans", sans-serif;
+margin: 10px;
+background: linear-gradient(
+90deg,
+rgba(243, 255, 253, 1) 0%,
+rgba(253, 255, 232, 1) 0%
+);
+border-radius: 12px;
+padding: 10px; 
+}
+
+ .humidIcon,.humidinfo {
+font-size: 1rem;
+ }
+
+  .loading {
+height: 400px;
+/* width: 400px;  */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 9999; 
+}
+
+ .loadingIcon {
+font-size: 3rem;
+animation: spin 2s linear infinite;
+ 
+ }
+
+  
+
+@keyframes spin {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
